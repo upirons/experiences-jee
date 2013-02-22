@@ -22,6 +22,7 @@
 				<th>Nombre</th>
 				<th>Titulo</th>
 				<th>Estado</th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -31,6 +32,9 @@
 				<td><%= box.getName() %></td>
 				<td><%= box.getTitle() %></td>
 				<td><%= box.isActivated() %></td>
+				<td>
+					<a href="/experiences-jee/boxes?id=<%=box.getId()%>">Ver</a>
+				</td>
 			</tr>
 			<% } %>
 		</tbody>
